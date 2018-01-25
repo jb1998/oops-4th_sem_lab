@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+char grade(int marks){
+if(marks>90)
+    return 'A';
+if(marks>75)
+    return 'B';
+    if(marks>60)
+    return 'C';
+    if(marks>40)
+    return 'D';
+
+return 'E';
+}
+int main()
+{
+    int arr[5];
+    int sum=0;
+    int sample=90;
+    cout<<sample<<endl;
+    cout<<"enter marks in 5 subjects"<<endl;
+    for(int i=0;i<5;i++){
+        cin>>arr[i];
+        sum+=arr[i];
+    }
+    cout<<"percentage"<<((sum+0.0)/5)<<endl;
+    cout<<grade(sum/5)<<endl;
+       return 0;
+}
+
+
+
+
